@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Header */
+header {
+    background-color: #000;
+    color: #39FF14;
+    padding: 10px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #39FF14;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #39FF14;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+
+
+
+
+/* Search Bar */
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar p {
+    background: #222;
+    border: 2px solid #39FF14;
+    border-radius: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 60%;
+    color: #fff;
+}
+
+
+
+
+
+/* Flash Deals */
+.flash-deals {
+    text-align: center;
+    margin: 20px;
+}
+
+.flash-deals h2 {
+    font-size: 24px;
+    color: #39FF14;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    width: 150px;
+    background: #222;
+    border: 2px solid #39FF14;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* Information about the company section */
+.info-section,
+.company-registration {
+    margin: 20px;
+    padding: 20px;
+    background: #222;
+    border: 2px solid #39FF14;
+    border-radius: 10px;
+}
+
+.latest-offers {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.latest-offers .box {
+    background: #222;
+    border: 2px solid #39FF14;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 48%;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #39FF14;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle:checked+nav {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .search-bar p {
+        width: 90%;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .latest-offers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .latest-offers .box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}

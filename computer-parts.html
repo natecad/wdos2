@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Parts Order</title>
+  <link rel="stylesheet" href="order.css">
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <div class="logo">
+        <img
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01112411/6108.png"
+          alt="Logo"
+        />
+      </div>
+      <h1>EMERAKI</h1>
+      <div class="header-icons">
+        <span>🛒</span>
+        <span>👤</span>
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="Upcoming-games.html">Upcoming</a></li>
+        <li><a href="consoles.html">Consoles</a></li>
+        <li><a href="peripherals.html">Peripherals</a></li>
+        <li><a href="About-Us.html">About</a></li>
+        <li><a href="Faqs-Queries.html">FAQ</a></li>
+        <li><a href="computer-parts.html">Computer Parts</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <section class="section">
+    <h2>Processors</h2>
+    <div class="grid" id="processors"></div>
+  </section>
+
+  <section class="section">
+    <h2>Graphics Cards</h2>
+    <div class="grid" id="gpus"></div>
+  </section>
+
+  <section class="section">
+    <h2>Motherboards</h2>
+    <div class="grid" id="motherboards"></div>
+  </section>
+
+  <section class="section">
+    <h2>Memory (RAM)</h2>
+    <div class="grid" id="ram"></div>
+  </section>
+
+  <section class="section">
+    <h2>Storage Devices</h2>
+    <div class="grid" id="storage"></div>
+  </section>
+
+  <section class="cart-section">
+    <h2>Shopping Cart</h2>
+    <table id="cartTable"></table>
+    <p>Total: <span id="totalPrice">$0.00</span></p>
+    <button onclick="saveFavourite()">Add to Favourites</button>
+    <button onclick="applyFavourite()">Apply Favourites</button>
+    <button onclick="buyNow()">Buy Now</button>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2024 GameStore. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

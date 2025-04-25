@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Header */
+header {
+    background-color: #000;
+    color: #39FF14;
+    padding: 10px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-icons span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #39FF14;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #39FF14;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+
+
+
+
+/* FAQ*/
+.faq-section {
+    margin-bottom: 40px;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.question {
+    cursor: pointer;
+    color: #39ff14;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font: inherit;
+    padding: 10px;
+    display: block;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 4px;
+}
+
+.faq-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #111;
+    border: 2px solid #39FF14;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #39FF14;
+}
+
+.faq-form h2 {
+    text-align: center;
+    color: #39FF14;
+    margin-bottom: 15px;
+}
+
+.faq-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.faq-form input,
+.faq-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #39FF14;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+}
+
+.faq-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #39FF14;
+    color: #111;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-form button:hover {
+    background-color: #28cc10;
+}
+
+
+
+
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #39FF14;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-toggle:checked+nav {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .search-bar p {
+        width: 90%;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .latest-offers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .latest-offers .box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar p {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+}
